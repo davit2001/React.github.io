@@ -1,0 +1,267 @@
+{
+  "Phone": [
+    {
+      "type":"phone",
+      "id": "1",
+      "name": "Apple",
+      "model": "Iphone 11",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71kZfQA-Y7L._AC_SL1500_.jpg",
+
+      "Colors": {
+      "white": "https://images-na.ssl-images-amazon.com/images/I/71kZfQA-Y7L._AC_SL1500_.jpg",
+      "yellow": "https://images-na.ssl-images-amazon.com/images/I/71Z8C1zRgAL._AC_SL1500_.jpg",
+      "purple": "https://www.mobileworld.sk/fotky7817/fotos/_vyr_1811_1389585.jpg",
+      "green":"https://images-na.ssl-images-amazon.com/images/I/71Dh%2BNR7ivL._AC_SL1500_.jpg",
+      "black":"https://images-na.ssl-images-amazon.com/images/I/71iO2R%2BCLjL._AC_SL1500_.jpg",
+      "red":"https://images-na.ssl-images-amazon.com/images/I/715HCLsOHbL._AC_SX522_.jpg"
+      },
+      
+      "parameter": {
+        "ram":["4gb"],
+        "memory": ["64gb", "128gb","256gb"],
+        "year":"2019",
+        "color": "white",
+        "AvailableColors": {
+          "1":"white",
+          "2":"purple",
+          "3":"green",
+          "4":"black",
+          "5": "yellow",
+          "6":"red"
+        }
+      },
+      "price": ["700"],
+      "Price": 700
+    },
+    {
+      "id": "2",
+      "type":"phone",
+      "name": "Huawei",
+      "model": "P40 Pro",
+      "img": "https://i.citrus.ua/uploads/shop/c/3/c3552fb4bd35cef757a73c882e2171e3.jpg",
+      "Colors": {
+        "silver": "https://images-na.ssl-images-amazon.com/images/I/51IRDFsoueL._AC_SY355_.jpg",
+        "gold": "https://images-na.ssl-images-amazon.com/images/I/51IElBXzxhL._AC_SY355_.jpg",
+        "black":"https://i.citrus.ua/uploads/shop/c/3/c3552fb4bd35cef757a73c882e2171e3.jpg",
+        "lightblue":"https://images-na.ssl-images-amazon.com/images/I/61VX0szn4aL._AC_SX569_.jpg",
+        "white":"https://www.powerplanetonline.com/cdnassets/huawei_p40_pro_8gb_256gb_ds_blanco_03_ad_l.jpg"
+      },
+      
+      "parameter": {
+        "ram": ["8gb"],
+        "memory": ["128gb","256gb","512gb"],
+        "year":"2020",
+        "color": "black",
+        "AvailableColors": {
+          "1":"black",
+          "2":"gold",
+          "3":"lightblue",
+          "4":"white",
+          "5": "silver"
+        }
+      },
+      "price": ["800"],
+      "Price": 800
+    },
+    {
+      "id": "3",
+      "type":"phone",
+      "name": "Xiaomi",
+      "model": "Mi 10 ultra",
+      "img": "https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/m/i/mi-10-ultra_1_3.jpg",
+      "Colors": {
+        "black":"https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/m/i/mi-10-ultra_1_3.jpg",
+        "white": "https://phonesdata.com/files/models/Xiaomi--Mi-10-Ultra-846.jpg"
+      },
+      
+      "parameter": {
+        
+        "ram":["8gb","12gb","16gb"],
+        "memory":["128gb","256gb","512gb"],
+
+        "year":"2019",
+        "color": "black",
+        "AvailableColors": {
+          "1": "black",
+           "2":"white"
+        }
+      },
+      "price": ["1000","1100","1200"],
+      "Price": 1000
+    },
+    {
+      "id": "4",
+      "type":"phone",
+      "name": "Samsung",
+      "model": "Galaxy a51",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61sAKMokIUL._AC_SL1000_.jpg",
+      "Colors": {
+      "black":"https://images-na.ssl-images-amazon.com/images/I/61sAKMokIUL._AC_SY355_.jpg",
+      "blue": "https://images-na.ssl-images-amazon.com/images/I/61HFJwSDQ4L._AC_SX466_.jpg",
+      "white": "https://d3fa68hw0m2vcc.cloudfront.net/db1/232663424.jpeg",
+      "pink":"https://www.giftkart.pk/media/catalog/product/cache/8f9ff50889b1a192ddfa50220fe53c9a/1/4/14_8_3.png"
+      },
+      
+      "parameter": {
+        "ram": ["4gb","6gb","8gb"],
+        "memory": ["64gb","128gb"],
+        
+        "year":"2019",
+        "color": "Gray",
+        "AvailableColors": {
+           "1": "black",
+           "2":"white",
+           "3":"blue",
+           "4":"pink"
+        }
+      },
+      "price": ["269","320","360"],
+      "Price": 269
+     
+    },  
+    {
+      "id": "5",
+      "type":"phone",
+      "name": "Apple",
+      "model": "Iphone 12",
+      "img": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-r1.jpg",
+
+      "Colors": {
+      "Silver": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-r1.jpg",
+      "Graphite": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-max-1.jpg",
+      "purple": "https://www.mobileworld.sk/fotky7817/fotos/_vyr_1811_1389585.jpg",
+      "green":"https://images-na.ssl-images-amazon.com/images/I/71Dh%2BNR7ivL._AC_SL1500_.jpg",
+      "black":"https://images-na.ssl-images-amazon.com/images/I/71iO2R%2BCLjL._AC_SL1500_.jpg",
+      "red":"https://images-na.ssl-images-amazon.com/images/I/715HCLsOHbL._AC_SX522_.jpg"
+      },
+      
+      "parameter": {
+        "ram":["6gb"],
+        "memory": ["128gb", "256gb","512gb"],
+        "year":"2020",
+        "color": "Silver",
+        "AvailableColors": {
+          "1":"Silver",
+          "2":"Graphite",
+          "3":"Gold",
+          "4":"Pacific  ",
+          "5": "Blue"
+        }
+      },
+      "price": ["1120","1250","1400"],
+      "Price": 1120
+    }, {
+      "id": "6",
+      "type":"phone",
+      "name": "Huawei",
+      "model": "P30 Pro",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51zDfRUUhHL._AC_SX569_.jpg",
+      "Colors": {
+        "black": "https://images-na.ssl-images-amazon.com/images/I/51zDfRUUhHL._AC_SX569_.jpg",
+        "pink": "https://cdn1.ozone.ru/s3/multimedia-c/c500/6016961196.jpg",
+        "blue":"https://images-na.ssl-images-amazon.com/images/I/61waWf3%2BjqL._AC_SX569_.jpg",
+        "red":"https://images-na.ssl-images-amazon.com/images/I/61H0-%2B7YtGL._AC_SX569_.jpg"
+       },
+      
+      "parameter": {
+        "ram": ["6gb","8gb"],
+        "memory": ["128gb","256gb","512gb"],
+        "year":"2019",
+        "color": "black",
+        "AvailableColors": {
+          "1":"black",
+          "2":"pink",
+          "3":"blue",
+          "4":"red"
+         }
+      },
+      "price": ["458","589"],
+      "Price": 458
+    }
+  ],
+  "PhoneInfo": [
+    {
+      "brand": {
+        "apple":"https://www.flaticon.com/svg/static/icons/svg/179/179309.svg",
+        "huawei":"https://image.flaticon.com/icons/png/512/882/882738.png",
+        "xiaomi":"https://icons-for-free.com/iconfiles/png/512/company+mi+mobile+xiaomi+icon-1320168262452948540.png",
+        "samsung":"https://i.pinimg.com/originals/82/6a/35/826a35c3aa8070b8f38737ed83496af6.png"
+      },
+      
+      "ram":["4gb","6gb","8gb","12gb","16gb"],
+      "memory":["64gb","128gb","256gb","512gb"]
+    }
+  ],
+  
+  "Laptop": [
+    {
+
+      "id": "1",
+      "type":"laptop",
+      "name": "Asus",
+      "model": "Vivobook s15 S532fl",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81veFLcYikL._SY355_.jpg",
+      "img2": "https://www.asus.com/media/global/products/Wb1trOkeZC2BGvqG/P_setting_fff_1_90_end_600.png",
+      "img3": "https://images-na.ssl-images-amazon.com/images/I/817pBndz0SL._SL1500_.jpg",
+      "parameter": {
+        "screen":"15.6",
+        "processor":"Intel Core i7-8565U",
+        "ram":"8gb",
+        "memory": "256gb ssd",
+        "year":"2019",
+        "color": "Gray"
+      },
+      "price": ["850"]
+    },
+    {
+      "id": "2",
+      "type":"laptop",
+      "name": "Dell",
+      "model": "Xps 15",
+      "img": "https://www.notebookcheck-ru.com/fileadmin/Notebooks/News/_nc3/9vUOcNz.png",
+      "img2": "https://www.zigzag.am/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/3/4/347740.jpg",
+      "parameter": {
+        "screen":"15.6",
+        "processor":"Intel Core i7-10750H",
+        "ram":"8gb",
+        "memory": "512gb ssd",
+        "year":"2019",
+        "color": "black"
+      },
+      "price": ["1000"]
+    },
+    {
+      "id": "3",
+      "type":"laptop",
+      "name": "HP",
+      "model": "Elite Dragonfly",
+      "img": "https://img.ditching.eu/Reviews/545464681_77.jpg",
+      "parameter": {
+        "screen":"13.3",
+        "processor":"Intel Core i7 8565U",
+        "ram":"8gb",
+        "memory": "512gb ssd",
+        "year":"2019",
+        "color": "blue"
+      },
+      "price": ["1700"]
+    },
+    {
+      "id": "4",
+      "type":"laptop",
+      "name": "Apple",
+      "model": "Macbook Pro",
+      "img": "https://applestore.am/wp-content/uploads/2020/02/MVFH2-4.jpg",
+      "img2": "https://i.pinimg.com/736x/85/a3/41/85a341637f8f80df587bf572573421cc.jpg",
+      "parameter": {
+        "screen":"16",
+        "processor":"Intel Core i7",
+        "ram":"8gb",
+        "memory": "512gb",
+        "year":"2019",
+        "color": "gray"
+      },
+      "price": ["2000"]
+    }
+  ]
+}
