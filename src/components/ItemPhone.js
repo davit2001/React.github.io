@@ -8,7 +8,7 @@ export default function ItemPhone() {
 
     let params = useParams();
     let itemId = params.itemId;
-   
+ 
     useEffect(()=>{
         dispatch(fetchItemPhone(itemId))
         return () => {
@@ -16,13 +16,12 @@ export default function ItemPhone() {
         }
     },[itemId])
     
-    let item = useSelector(state => state.itemPhone);
+    let item = useSelector(state => state.phone.itemPhone);
    
     const [count,setCount] = useState(1);
-
-    
-    const memory = item.parameter.memory;
     const ram =item.parameter.ram;
+    const memory = item.parameter.memory;
+
    let [Price,setPrice] = useState();
    
   const AvailableColors = Object.values(item.parameter.AvailableColors);
@@ -52,7 +51,7 @@ export default function ItemPhone() {
 
     let itemInfo = {
         "id":item.id,
-        "count":1,
+        "count":count,
         "name": item.name,
         "model": item.model,
         "img": item.Colors[Color],
@@ -106,8 +105,9 @@ const handleSetColor = (elem,id) => {
                 <h1>{item.name}</h1>
                 <h1>{item.model}</h1>
                <h1>Price: {Price == undefined ? item.price[0]: Price}$</h1>
-               <button onClick={increment}>+</button> {count} 
                <button onClick={decrement}>-</button>
+               {count}
+               <button onClick={increment}>+</button>  
                 </div>
                <hr />
                <div className="PhoneParameter">

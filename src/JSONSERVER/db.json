@@ -192,76 +192,124 @@
       "memory":["64gb","128gb","256gb","512gb"]
     }
   ],
+  "LaptopInfo": [
+    {
+      "brand": {
+        "apple": "https://www.flaticon.com/svg/static/icons/svg/179/179309.svg",
+        "dell": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/1024px-Dell_Logo.svg.png",
+        "asus":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/ASUS_Logo.svg/512px-ASUS_Logo.svg.png",
+        "hp":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/HP_New_Logo_2D.svg/768px-HP_New_Logo_2D.svg.png"
+      },
+      "processor":["i5","i7","i9"],
+      "ram": ["8gb","16gb","20gb","32gb"],
+      "memory":["128gb","256gb","512gb","1024gb"]
+    }
+  ],
   
   "Laptop": [
     {
-
       "id": "1",
       "type":"laptop",
       "name": "Asus",
-      "model": "Vivobook s15 S532fl",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/81veFLcYikL._SY355_.jpg",
-      "img2": "https://www.asus.com/media/global/products/Wb1trOkeZC2BGvqG/P_setting_fff_1_90_end_600.png",
-      "img3": "https://images-na.ssl-images-amazon.com/images/I/817pBndz0SL._SL1500_.jpg",
+      "model": "Vivobook S532fl",
+      "img": "https://redstore.am/uploads/shop/products/additional/b09ef2505bfc2a3c9c4dcdafca387228.jpg",
+       "Colors": {
+        "grey": "https://redstore.am/uploads/shop/products/additional/b09ef2505bfc2a3c9c4dcdafca387228.jpg",
+        "green": "https://www.asus.com/media/global/products/6eWXMk3NwHMM7JI4/P_setting_fff_1_90_end_600.png",
+        "gold":"https://www.asus.com/media/global/products/Wb1trOkeZC2BGvqG/P_setting_fff_1_90_end_600.png",
+        "pink":"https://images-na.ssl-images-amazon.com/images/I/817pBndz0SL._SL1500_.jpg"
+       },
+      
       "parameter": {
-        "screen":"15.6",
-        "processor":"Intel Core i7-8565U",
-        "ram":"8gb",
-        "memory": "256gb ssd",
-        "year":"2019",
-        "color": "Gray"
+        "ram": ["8gb","16gb"],
+        "memory": ["256gb","512gb"],
+        "processor": ["i5-10210U","i7-10510U"],
+        "year":"2020",
+        "color": "grey",
+        "AvailableColors": {
+          "1":"grey",
+          "2":"green",
+          "3":"gold",
+          "4":"pink"
+         }
       },
-      "price": ["850"]
+      "price": ["850","1000"],
+      "Price": 850
     },
     {
       "id": "2",
       "type":"laptop",
       "name": "Dell",
       "model": "Xps 15",
-      "img": "https://www.notebookcheck-ru.com/fileadmin/Notebooks/News/_nc3/9vUOcNz.png",
-      "img2": "https://www.zigzag.am/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/3/4/347740.jpg",
+      "img": "https://hotline.ua/img/tx/230/2309885275.jpg",
+    "Colors": {
+        "black": "https://hotline.ua/img/tx/230/2309885275.jpg",
+        "white":"https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/XPS_15_cnb_00055lf110_wh_coralmarble.jpg"
+       },
+      
       "parameter": {
-        "screen":"15.6",
-        "processor":"Intel Core i7-10750H",
-        "ram":"8gb",
-        "memory": "512gb ssd",
-        "year":"2019",
-        "color": "black"
+        "ram": ["8gb","16gb"],
+        "memory": ["128gb","256gb","512gb"],
+        "processor": ["i5-5200U","i7-9360","i9-10885H"],
+        "year":"2020",
+        "color": "black",
+        "AvailableColors": {
+          "1":"black",
+          "2":"white"
+         }
       },
-      "price": ["1000"]
+      "price": ["1000","1250","1800"],
+      "Price": 1000
     },
     {
       "id": "3",
       "type":"laptop",
       "name": "HP",
       "model": "Elite Dragonfly",
-      "img": "https://img.ditching.eu/Reviews/545464681_77.jpg",
-      "parameter": {
-        "screen":"13.3",
-        "processor":"Intel Core i7 8565U",
-        "ram":"8gb",
-        "memory": "512gb ssd",
-        "year":"2019",
-        "color": "blue"
+      "img": "https://oastechnologies.com/wp-content/uploads/2020/02/LD0005527233_2.jpg",
+      "Colors": {
+       "blue":"https://oastechnologies.com/wp-content/uploads/2020/02/LD0005527233_2.jpg"
       },
-      "price": ["1700"]
+      
+      "parameter": {
+        "ram": ["16gb","32gb"],
+        "memory": ["256gb","512gb","1024"],
+        "processor": ["i5-1035","i7-7500u"],
+        "year":"2019",
+        "color": "blue",
+        "AvailableColors": {
+         "1":"blue"
+          
+         }
+      },
+      "price": ["1100","1275"],
+      "Price": 1100
     },
     {
       "id": "4",
       "type":"laptop",
       "name": "Apple",
       "model": "Macbook Pro",
-      "img": "https://applestore.am/wp-content/uploads/2020/02/MVFH2-4.jpg",
+      "img": "https://maxmobiles.ru/10266/macbook-pro-16-retina-space-gray-1tb-2019.jpg",
       "img2": "https://i.pinimg.com/736x/85/a3/41/85a341637f8f80df587bf572573421cc.jpg",
+      "Colors": {
+        "gray": "https://maxmobiles.ru/10266/macbook-pro-16-retina-space-gray-1tb-2019.jpg",
+        "black":"https://i.pinimg.com/736x/85/a3/41/85a341637f8f80df587bf572573421cc.jpg"
+       },
+      
       "parameter": {
-        "screen":"16",
-        "processor":"Intel Core i7",
-        "ram":"8gb",
-        "memory": "512gb",
+        "ram": ["8gb","16gb"],
+        "memory": ["128gb","256gb","512gb"],
+        "processor": ["i5-1038NG7","i7-7700HQ","i9-9960"],
         "year":"2019",
-        "color": "gray"
+        "color": "grey",
+        "AvailableColors": {
+          "1":"grey",
+          "2":"black"
+         }
       },
-      "price": ["2000"]
+      "price": ["1500","1800","2500"],
+      "Price": 1500
     }
   ]
 }

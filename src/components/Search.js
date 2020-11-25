@@ -3,11 +3,11 @@ import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 
 function Search() {
-    const item = useSelector(state=>state.searchItem)
+    const item = useSelector(state=>state.phone.searchItem)
     const history = useHistory();
     
   const handleClick = (item) => {
-    (item.type === "phone") ? history.push(`/ItemPhone/${item.id}`) : history.push(`/ItemLaptop/`,item)
+    (item.type === "phone") ? history.push(`/ItemPhone/${item.id}`) : history.push(`/ItemLaptop/${item.id}`)
   }
     return (
        <>

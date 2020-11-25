@@ -24,11 +24,12 @@ function App() {
     <Header />
      <div>
        <Route exact path="/" component={Item}/>
+       {/* <Route exact path="/davit2001.github.io/Store/" component={Item}/> */}
        <Route path="/Phone" component={Phone}/>
        <Route path="/Item" component={Item}/>
        <Route  path="/Laptop" component={Laptop}/>
        <Route path="/ItemPhone/:itemId" component={ItemPhone}/>
-       <Route path="/ItemLaptop" component={ItemLaptop}/>
+       <Route path="/ItemLaptop/:itemId" component={ItemLaptop}/>
        <Route path="/Order" component={Order}/>
        <Route path="/Search" component={Search} />
      </div>

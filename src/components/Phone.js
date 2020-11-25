@@ -6,7 +6,7 @@ import {fetchItemsPhone,fetchPriceFilter,fetchFilterName,fetchPhoneFilter} from 
 export default function Item() {
   let param = useLocation();
   
-  const phone = useSelector(state => state.itemsPhone);
+  const phone = useSelector(state => state.phone.itemsPhone);
   const dispatch = useDispatch();
   const [mounted,setMounted] = useState(true);
   

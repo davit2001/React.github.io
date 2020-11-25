@@ -54,7 +54,7 @@ export function fetchTotalItem() {
 export function fetchItemSearch(name) {
   return {
     type:"FETCH_ITEM_SEARCH",
-    payload: data.Phone.concat(data.Laptop).filter(elem=>elem.name === name)
+    payload: data.Phone.concat(data.Laptop).filter(elem=>elem.name.toLowerCase() === name.toLowerCase())
   }
 }
 export function fetchPhoneInfo() {

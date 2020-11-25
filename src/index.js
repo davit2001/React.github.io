@@ -5,7 +5,7 @@ import App from './App';
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk'
 import {createStore,applyMiddleware,compose} from 'redux'
-import rootReducer from './reducers/itemReducer'
+import rootReducer from './reducers'
 import * as serviceWorker from './serviceWorker';
 let store = createStore(rootReducer,compose(
   applyMiddleware(thunk),

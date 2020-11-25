@@ -18,7 +18,6 @@ const inititalState = {
         "price": []
       },
     newPhoneItem:[],
-    itemsLaptop:[],
     menuListItem:[],
     totalItem:[],
     searchItem:[],
@@ -123,12 +122,7 @@ const itemReducer = (state = inititalState,action) => {
           ...state,
           itemsPhone: [...action.payload]
       }          
-      case 'FETCH_ITEM_LAPTOP': 
-        return {
-            ...state,
-            loading: false,
-            itemsLaptop: action.payload.item
-        }
+     
         
         default: return state
     }

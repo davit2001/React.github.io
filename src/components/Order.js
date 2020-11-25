@@ -5,7 +5,7 @@ import { fetchItemRemove } from '../action';
 
 export default function Order() {
    let dispatch = useDispatch();
-   const items = useSelector(state=>state.newPhoneItem);
+   const items = useSelector(state=>state.phone.newPhoneItem);
    const RemoveItem = (item) => {
       //console.log(item);
      dispatch(fetchItemRemove(item))

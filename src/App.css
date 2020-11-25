@@ -26,7 +26,16 @@ button,input {
   margin-top: 15px;
 }
 
-.menuList button {
+.PhoneListButton {
+ 
+  margin-top: 15px;
+  border: none;
+  background-color: #f5f5f5;
+  color: #131313;
+ 
+}
+
+.LaptopListButton {
  
   margin-top: 15px;
   border: none;
@@ -39,21 +48,34 @@ button,input {
   float: right;
   margin-right: 15px;
   margin-top:15px;
+  border: none;
 }
-.menuListButton span {
+.PhoneListButton span {
   float: right;
     margin-left: 5px;
     font-size: 20px;
     color: #bcbaba;
 }
-.menuListButton h1 {
+
+.LaptopListButton span {
+  float: right;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #bcbaba;
+}
+.PhoneListButton h1 {
   float: left;
   margin-top: 5px;
   margin-left: 10px;
   font-size: 20px;
 }
 
-
+.LaptopListButton h1 {
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+}
 
 .phoneBrands {
   width: 135px;
@@ -79,7 +101,8 @@ button,input {
   border: 2px solid black;
   border-radius: 5px;
 }
- .phoneBrandsTitle button {
+
+.phoneBrandsTitle button {
   margin-top: 15px;
   border: none;
   background-color: #f5f5f5;
@@ -117,6 +140,78 @@ button,input {
   font-size: 25px;
   margin-left: 5px;
 }
+
+
+.laptopBrandsTitle,.laptopParameterTitle {
+  margin-left: 15px;
+}
+.laptopBrands ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.laptopBrands li {
+  border: 2px solid #e2e1e1;
+  border-radius: 5px;
+}
+
+.laptopBrands li.active {
+  border: 2px solid black;
+}
+
+.laptopBrands li:hover {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.laptopBrandsTitle button {
+  margin-top: 15px;
+  border: none;
+  background-color: #f5f5f5;
+  color: #131313;
+  font-size: 25px;
+  margin-left: 5px;
+} 
+.laptopParameterTitle button {
+  margin-top: 15px;
+  border: none;
+  background-color: #f5f5f5;
+  color: #131313;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.laptopParameter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 160px;
+    margin-top: 20px;
+}
+
+.laptopParameter h4 {
+ font-size: 17px;
+ margin: 10px;
+}
+.laptopParameter ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.laptopParameter li {
+  color: white;
+   background-color: #FF9900;
+   padding: 5px;
+   border-radius: 5px;
+}
+.laptopParameter li:hover {
+ border: 2px solid black;
+}
+.laptopParameter li.active {
+ border: 2px solid black;
+}
+
 .Header {
   background-color: #131921;
   width: 100%;
@@ -171,7 +266,9 @@ button,input {
   }
 }
 
-
+.SearchAndOrder {
+  display: flex;
+}
 
 .search {
   display: flex;
@@ -308,7 +405,7 @@ button,input {
 
 .Laptop {
   display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 15px;
@@ -316,7 +413,10 @@ button,input {
 
 .LaptopItem {
   width: 260px;
+  height: 300px;
+  margin: 50px;
   padding: 18px;
+  background-color: #fff;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -536,13 +636,108 @@ font-size: 17px;
 .LaptopConatinerParameter {
   margin-top: 20px;
 }
-.LaptopParameter {
-  margin: 10px;
+
+.LaptopProcessor {
+  cursor: pointer;
+  margin-top: 10px;
 }
-.LaptopParameter h4 {
-  font-size: 16px;
+.LaptopProcessor span {
+  float: left;
+}
+.LaptopProcessor li {
+  list-style-type: none;
+  float: left;
+  margin-left: 10px;
+  padding: 5px;
+  color: white;
+  background-color: #FF8800;
+  border-radius: 5px;
+}
+.LaptopProcessor li.active {
+  background-color: #175ab3;
 }
 
+.LaptopRam li.active {
+  background-color: #175ab3;
+}
+
+.LaptopMemory li.active {
+  background-color: #175ab3;
+}
+.LaptopRam {
+  cursor: pointer;
+  margin-top: 10px;
+}
+.LaptopRam span {
+  float: left;
+}
+.LaptopRam li {
+  list-style-type: none;
+  float: left;
+  margin-left: 10px;
+  padding: 5px;
+  color: white;
+  background-color: #FF8800;
+  border-radius: 5px;
+}
+
+.LaptopMemory {
+  cursor: pointer;
+  margin-top: 10px;
+}
+.LaptopMemory span {
+  float: left;
+}
+.LaptopMemory li {
+  list-style-type: none;
+  float: left;
+  margin-left: 10px;
+  padding: 5px;
+  color: white;
+  background-color: #FF8800;
+  border-radius: 5px;
+}
+
+.Year,.Color,.PhoneAvailableColors {
+  margin-top: 15px;
+}
+.LaptopParameter .PhoneAvailableColors span{
+ margin-top: 5px;
+}
+.LaptopParameter .PhoneAvailableColors {
+  cursor: pointer;
+}
+.LaptopParameter {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.LaptopBuy {
+  border:none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  background-color: #FF8800;
+  margin-top: 10px;
+}
+.LaptopBuy .ico {
+  background-image: url('https://image.flaticon.com/icons/png/512/126/126083.png');
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  float: left;
+ }
+.LaptopBuy .icoText {
+  color: white;
+  font-size: 1.25em;
+  float: right;
+  margin: 3px 0px 0px 8px;
+}
+
+.LaptopPrice {
+  margin-top: 20px;
+}
 .LaptopPrice h1:nth-child(3) {
   margin-top:15px
 }
