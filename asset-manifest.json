@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/davit2001.github.io/Store/static/css/main.f65c841b.chunk.css",
-    "main.js": "/davit2001.github.io/Store/static/js/main.d23dcb7e.chunk.js",
-    "main.js.map": "/davit2001.github.io/Store/static/js/main.d23dcb7e.chunk.js.map",
+    "main.css": "/davit2001.github.io/Store/static/css/main.0d234452.chunk.css",
+    "main.js": "/davit2001.github.io/Store/static/js/main.e0da7c1f.chunk.js",
+    "main.js.map": "/davit2001.github.io/Store/static/js/main.e0da7c1f.chunk.js.map",
     "runtime-main.js": "/davit2001.github.io/Store/static/js/runtime-main.99d2e5f4.js",
     "runtime-main.js.map": "/davit2001.github.io/Store/static/js/runtime-main.99d2e5f4.js.map",
-    "static/js/2.bd3fafc4.chunk.js": "/davit2001.github.io/Store/static/js/2.bd3fafc4.chunk.js",
-    "static/js/2.bd3fafc4.chunk.js.map": "/davit2001.github.io/Store/static/js/2.bd3fafc4.chunk.js.map",
+    "static/js/2.dbb735b0.chunk.js": "/davit2001.github.io/Store/static/js/2.dbb735b0.chunk.js",
+    "static/js/2.dbb735b0.chunk.js.map": "/davit2001.github.io/Store/static/js/2.dbb735b0.chunk.js.map",
     "index.html": "/davit2001.github.io/Store/index.html",
-    "precache-manifest.5c0d2c502aa57910d82e3cb22368c519.js": "/davit2001.github.io/Store/precache-manifest.5c0d2c502aa57910d82e3cb22368c519.js",
+    "precache-manifest.2b5c05a5af2120cf36d0506413a58862.js": "/davit2001.github.io/Store/precache-manifest.2b5c05a5af2120cf36d0506413a58862.js",
     "service-worker.js": "/davit2001.github.io/Store/service-worker.js",
-    "static/css/main.f65c841b.chunk.css.map": "/davit2001.github.io/Store/static/css/main.f65c841b.chunk.css.map",
-    "static/js/2.bd3fafc4.chunk.js.LICENSE.txt": "/davit2001.github.io/Store/static/js/2.bd3fafc4.chunk.js.LICENSE.txt"
+    "static/css/main.0d234452.chunk.css.map": "/davit2001.github.io/Store/static/css/main.0d234452.chunk.css.map",
+    "static/js/2.dbb735b0.chunk.js.LICENSE.txt": "/davit2001.github.io/Store/static/js/2.dbb735b0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.99d2e5f4.js",
-    "static/js/2.bd3fafc4.chunk.js",
-    "static/css/main.f65c841b.chunk.css",
-    "static/js/main.d23dcb7e.chunk.js"
+    "static/js/2.dbb735b0.chunk.js",
+    "static/css/main.0d234452.chunk.css",
+    "static/js/main.e0da7c1f.chunk.js"
   ]
 }
