@@ -21,8 +21,7 @@ export default function ItemLaptop() {
     const [Price,setPrice] = useState()
     const increment = () => {
         setCount(count + 1)
-        
-        setPrice(Number(activeMemory*150) + Number(activeRam*100) + Number(activeColor*50) + Number(item.price[activeProcessor])*(count+1))
+       setPrice((Number(activeMemory*150) + Number(activeRam*100) + Number(activeColor*50) + Number(item.price[activeProcessor]))*(count+1))
     }
 
     const decrement = () => {
@@ -64,7 +63,6 @@ export default function ItemLaptop() {
   
   */
    const handleSetColor = (elem,id) =>{
-       
        setColor(elem)
        setActiveColor(id)
        setPrice((Number(id*50) + Number(activeRam*100) + Number(activeMemory*150) + Number(item.price[activeProcessor]))*count)

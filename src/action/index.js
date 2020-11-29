@@ -63,17 +63,6 @@ export function fetchPhoneInfo() {
     payload: data.PhoneInfo[0]
   }
 }
-//  function filterFunc(origArr,updatingArr) {
-//   for(var i = 0, l = origArr.length; i < l; i++) {
-//     for(var j = 0, ll = updatingArr.length; j < ll; j++) {
-//         if(origArr[i].name === updatingArr[j].name) {
-//             origArr.splice(i, 1, updatingArr[j]);
-//             break;
-//         }
-//     }
-//   }
-//    return origArr
-//  }
 
 
 
@@ -124,29 +113,17 @@ export function fetchPhoneMemory(activeMemory) {
     payload: activeMemory
   }
 }
-export function fetchNameFilter() {
- 
- return {
-   type:"FETCH_NAME_FILTER",
-    payload: data.Phone.sort() 
- }
-}
+
 
 export function fetchPriceFilter() {
-  let dataPhone = [...data.Phone]
-  dataPhone.sort((a, b) => (a.Price > b.Price) ? 1 : -1)
   return { 
-    type:"FETCH_PRICE_FILTER",
-    payload: dataPhone
+    type:"FETCH_PRICE_FILTER"
   }
 }
 
 export function fetchFilterName() {
-  let dataPhoneName = [...data.Phone];
-  dataPhoneName.sort((a,b)=> (a.name > b.name) ? 1: -1)
   return {
-    type: "FETCH_NAME_FILTER",
-    payload: dataPhoneName 
+    type: "FETCH_NAME_FILTER"
   }
 }
 

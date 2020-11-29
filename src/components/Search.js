@@ -9,6 +9,7 @@ function Search() {
   const handleClick = (item) => {
     (item.type === "phone") ? history.push(`/ItemPhone/${item.id}`) : history.push(`/ItemLaptop/${item.id}`)
   }
+  
     return (
        <>
        { (item.length !== 0 || item.length !== '') ?  <div className="SearchContainer">

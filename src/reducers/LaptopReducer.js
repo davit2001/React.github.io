@@ -54,6 +54,22 @@ const laptopReducer = (state = inititalState, action) => {
        ...state,
        itemsLaptop: newArray
      }  
+     case "FETCH_PRICE_SORT": 
+     let dataLaptop = [...state.itemsLaptop];
+    dataLaptop.sort((a,b)=> (a.Price > b.Price) ? 1 : -1)
+     return {
+       ...state,
+      itemsLaptop: [...dataLaptop]
+     }
+     case "FETCH_NAME_SORT":
+      let dataPhoneName = [...state.itemsLaptop];
+      dataPhoneName.sort((a,b)=> (a.name > b.name) ? 1: -1)
+       return {
+         ...state,
+        itemsLaptop: [...dataPhoneName]
+       }
+       
+
     default: return state; 
   }
 }

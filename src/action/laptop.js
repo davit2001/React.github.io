@@ -81,6 +81,18 @@ export function fetchItemLaptop() {
     }
   }
 
+  export  function fetchPriceSort() {
+   return {
+      type:"FETCH_PRICE_SORT"
+    }
+  }
+  export function fetchNameSort() {
+  
+    return {
+      type:"FETCH_NAME_SORT",
+    }
+}
+
   
      
  

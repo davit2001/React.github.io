@@ -112,19 +112,22 @@ const itemReducer = (state = inititalState,action) => {
            menuListItem:action.payload.item 
         } 
     case "FETCH_PRICE_FILTER": 
-       
+    let dataPhone = [...state.itemsPhone]
+    dataPhone.sort((a, b) => (a.Price > b.Price) ? 1 : -1)
        return {
         ...state,
-          itemsPhone:  [...action.payload]
+          itemsPhone:  [...dataPhone]
        } 
-    case "FETCH_NAME_FILTER": 
+
+    case "FETCH_NAME_FILTER":
+        let dataPhoneName = [...state.itemsPhone];
+        dataPhoneName.sort((a,b)=> (a.name > b.name) ? 1: -1) 
       return {
           ...state,
-          itemsPhone: [...action.payload]
-      }          
-     
-        
-        default: return state
+          itemsPhone: [...dataPhoneName]
+      }  
+
+      default: return state
     }
 }
 export default itemReducer

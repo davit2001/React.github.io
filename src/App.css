@@ -212,6 +212,14 @@ button,input {
  border: 2px solid black;
 }
 
+.LaptopSort {
+  width: 100%;
+}
+.LaptopSort select {
+  float: right;
+  margin-right: 5%;
+}
+
 .Header {
   background-color: #131921;
   width: 100%;
@@ -234,37 +242,14 @@ button,input {
   font-family: emoji;
   background-color: #131921;
 }
+.menu h1.active {
+  display: none;
+}
+
 .menu img {
   background-color: #131921;
 }
-@media only screen and (max-width: 600px) {
-  .search input {
-    display: none!important;
-  }
-}
 
-@media only screen and (max-width: 1870px) and (min-width: 1000px) {
-  .PhoneCentre {
-   justify-content: center!important;
-    
-  }
-}
-
-@media only screen and (max-width: 937px)  {
-  .PhoneCentre {
-    margin-left: 30%!important;
-  }
-  .orderList button {
-   width: 45px!important;
-   height: 45px!important;
-  }
-}
-
-@media only screen and (max-width: 823px)  {
-  .search input:first-child {
-    display: none;
-  }
-}
 
 .SearchAndOrder {
   display: flex;
@@ -276,12 +261,21 @@ button,input {
     align-items: center;
     background-color: #131921;
 }
-.search input{
+.search.active {
+  width: 95%;
+  display: flex;
+}
+
+.search input:first-child{
   display: block;
   padding: 10px;
   width: 35vmax;
   background-color: white;
   border: none;
+ }
+ .search input:first-child.active {
+  width: 95%;
+  display: flex;
  }
 
 .search input:last-child {
@@ -293,14 +287,31 @@ button,input {
   background-color: #FF9900;
   border-radius: 0px 5px 5px 0px;
 }
-
+.search input:last-child.active {
+  display: none;
+}
+.Order_Search {
+  display: flex;
+  align-items: center;
+}
+.Order_Search .SearchButton {
+  cursor: pointer;
+  display: none;
+  width: 45px;
+  height: 45px;
+  border:none;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/VisualEditor_-_Icon_-_Search-big_-_white.svg/1200px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png");
+  background-size: cover;
+  background-color: #131921;
+  margin-right: 10px;
+}
 .orderList {
  display: flex;
  justify-content: end;
  align-items: center;
  margin-right: 60px;
 }
-.orderList button {
+.orderList .order {
  width: 65px;
  height: 65px;
  background-image: url("https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/shopping-circle-blue-512.png");
@@ -774,4 +785,56 @@ font-size: 17px;
 
 .SearchError {
   text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 1870px) and (min-width: 1000px) {
+  .PhoneCentre {
+   justify-content: center!important;
+    
+  }
+}
+
+@media only screen and (max-width: 937px)  {
+  .PhoneCentre {
+    margin-left: 30%!important;
+  }
+  .orderList button {
+   width: 45px!important;
+   height: 45px!important;
+  }
+}
+@media only screen and (min-width: 930px) {
+  #logo {
+    display: block;
+    
+  }
+  .search.active {
+    width: 40vmax;
+  }
+  .search input:first-child.active {
+    width: 35vmax;
+  }
+  .search input:last-child.active {
+    display: block;
+  }
+  .SearchButton {
+    display: none;
+  }
+}
+@media only screen and (max-width: 929px)  {
+  .search {
+    display: none;
+  }
+  .Order_Search .SearchButton  {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #logo {
+    font-size: 18px;
+  }
 }

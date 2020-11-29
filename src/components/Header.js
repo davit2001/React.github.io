@@ -48,6 +48,18 @@ const toggleChange = () => {
  const dispatch = useDispatch();
  const itemCount = useSelector(state=>state.phone.newPhoneItem.length)
  
+ const [togglesearch,setToggleSearch] = useState(false)
+ const toggleSearch = () => {
+  setToggleSearch(!togglesearch)
+  
+  if (search) {
+    dispatch(fetchItemSearch(search))
+    history.push('/Search')
+  }
+  document.getElementsByClassName('search')[0].classList.toggle('active')
+}
+
+ 
     return (
         <>
          { toggle && <div className="menuList">
@@ -60,19 +72,23 @@ const toggleChange = () => {
         <div className="Header" >
             <div className="menu" >
                 <img width="60px" height="70px" src="https://goodmade.ru/upload/000/u1/101/39aadfae.png" alt="menu"  onClick={toggleChange}/>
-               <h1 onClick={handleHomePage}>My Amazon Store</h1>
+               <h1 onClick={handleHomePage} className={togglesearch ? 'active': ""} id="logo">My Amazon Store</h1>
         </div>
            
             <form className="search" onSubmit={handleSubmit}>
-              <input name="search" type="text" onChange={handleChange} />
-              <input type="submit" value=""/>
+              <input className={togglesearch ? 'active': ""} name="search" type="text" onChange={handleChange} />
+              <input className={togglesearch ? 'active': ""} name="searchButton" type="submit" value=""/>
             </form>
-            
+
+         <div className="Order_Search">
+              <button className="SearchButton" id="SearchButton" onClick={toggleSearch}></button>
             <div className="orderList" onClick={handleOrderPage}>
-          <button>
-            {itemCount !== 0 &&<span className="orderCount">{itemCount}</span>}
-          </button>
+             <button className="order">
+               {itemCount !== 0 &&<span className="orderCount">{itemCount}</span>}
+             </button>
            </div>
+         </div>
+            
 
         </div>
       {

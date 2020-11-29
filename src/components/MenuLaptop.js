@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import {fetchLaptopFilter} from '../action/laptop'
@@ -9,7 +9,6 @@ export default function MenuLaptop() {
 
  const toggleLaptop = () => {
   setLaptop(!laptop)
-  history.push("/Laptop")
 }
 const [toggleLaptopBrand,setToggleLaptopBrand] = useState(false);
 
@@ -37,7 +36,13 @@ const setBrand = (elem) => {
  index !== -1 ? setActiveBrand([...str]) : setActiveBrand([...activeBrand,elem])
  let newActiveBrand = index !== -1 ? [...str] : [...activeBrand,elem]
  dispatch(fetchLaptopFilter(newActiveBrand,activeProcessor,activeRam,activeMemory))
-
+  history.push({
+    pathname:"/Laptop",
+    laptop: newActiveBrand,
+    processor: activeProcessor,
+    ram: activeRam,
+    memory: activeMemory
+  })
 }
 
 const [activeProcessor,setActiveProcessor] = useState([]);
@@ -48,6 +53,13 @@ const setProcssor = (elem) => {
  index !== -1 ? setActiveProcessor([...str]) : setActiveProcessor([...activeProcessor,elem]);
  let newActiveProcessor = index !== -1 ? [...str] : [...activeProcessor,elem];
  dispatch(fetchLaptopFilter(activeBrand,newActiveProcessor,activeRam,activeMemory))
+ history.push({
+  pathname:"/Laptop",
+  laptop: activeBrand,
+  processor: newActiveProcessor,
+  ram: activeRam,
+  memory: activeMemory
+})
 }
 
 const [activeRam,setActiveRam] = useState([])
@@ -58,6 +70,13 @@ const setRam = (elem) => {
   index !== -1 ? setActiveRam([...str]) : setActiveRam([...activeRam,elem])
   let newActiveRam = index !== -1 ? [...str] : [...activeRam,elem]
   dispatch(fetchLaptopFilter(activeBrand,activeProcessor,newActiveRam,activeMemory))
+  history.push({
+    pathname:"/Laptop",
+    laptop: activeBrand,
+    processor: activeProcessor,
+    ram: newActiveRam,
+    memory: activeMemory
+  })
 }
 
 const [activeMemory,setActiveMemory] = useState([])
@@ -68,7 +87,14 @@ const [activeMemory,setActiveMemory] = useState([])
    index !== -1 ? setActiveMemory([...str]) : setActiveMemory([...activeMemory,elem])
    let newActiveMemory = index !== -1 ? [...str] : [...activeMemory,elem]
    dispatch(fetchLaptopFilter(activeBrand,activeProcessor,activeRam,newActiveMemory))
- }
+   history.push({
+    pathname:"/Laptop",
+    laptop: activeBrand,
+    processor: activeProcessor,
+    ram: activeRam,
+    memory: newActiveMemory
+  })
+}
     return (
         <>
           <button  className="LaptopListButton">

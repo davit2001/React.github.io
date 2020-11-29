@@ -9,7 +9,6 @@ export default function MenuPhone() {
     
 const togglePhone = () => {
     setPhone(!phone)
-    history.push("/Phone")
 }
 
 const [togglePhoneBrand,setTogglePhoneBrand] = useState(false);
@@ -42,11 +41,11 @@ const setBrand =  (id) => {
    let newActiveBrand = index !== -1 ? [...str] : [...activeBrand,id]
    
    dispatch(fetchPhoneFilter(newActiveBrand,activeRam,activeMemory))
-   
-  history.push({
-    pathname: '/Phone',
-    phone:  newActiveBrand, 
-    ram: activeRam
+   history.push({
+     "pathname": '/Phone',
+     "phone": newActiveBrand,
+     "ram": activeRam,
+     "memory": activeMemory  
    })
  }
  
@@ -60,13 +59,12 @@ const setRam =  (id) => {
   index != -1 ? setActiveRam([...str]) : setActiveRam([...activeRam,id])
   let newActiveRam = index !== -1 ? [...str] : [...activeRam,id];
   dispatch(fetchPhoneFilter(activeBrand,newActiveRam,activeMemory))
- history.push({
-  pathname: '/Phone',
-  state: {
-    phone:  activeBrand, 
-    ram: newActiveRam
-   }
- })
+  history.push({
+    "pathname": '/Phone',
+     "phone": activeBrand,
+     "ram": newActiveRam,
+     "memory": activeMemory  
+   })
 
  }
 
@@ -80,6 +78,12 @@ const setRam =  (id) => {
  let newActiveMemory = index !== -1 ? [...str] : [...activeMemory,id];
 
   dispatch(fetchPhoneFilter(activeBrand,activeRam,newActiveMemory))
+  history.push({
+   "pathname": '/Phone',
+    "phone": activeBrand,
+    "ram": activeRam,
+    "memory": newActiveMemory  
+  })
  }
  
     return (

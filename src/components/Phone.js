@@ -8,14 +8,15 @@ export default function Item() {
   
   const phone = useSelector(state => state.phone.itemsPhone);
   const dispatch = useDispatch();
-  const [mounted,setMounted] = useState(true);
+  const [mounted,setMounted] = useState(false);
   
  useEffect(() => {
-     dispatch(fetchItemsPhone())
-     setMounted(false)
-   
-    //(param.phone || param.ram) && dispatch(fetchPhoneFilter(param.phone,param.ram))
-  }, [mounted])
+   if (!mounted) {
+    dispatch(fetchItemsPhone())
+    setMounted(true)
+   }
+  (param.phone || param.ram || param.memory) && dispatch(fetchPhoneFilter(param.phone,param.ram,param.memory))
+  },[mounted])
 
   const history = useHistory()
    const handleClick = (item) => {
@@ -29,7 +30,7 @@ export default function Item() {
        dispatch(fetchPriceFilter(e.target.value))
      } else if (e.target.value == "Name") {
        dispatch(fetchFilterName(e.target.value))
-     } else {
+     } else if (e.target.value == "All") {
        dispatch(fetchItemsPhone())
      }
    }
@@ -41,6 +42,7 @@ export default function Item() {
          <div className="PhoneFilter">
            <select onChange={handleSortItem}>
              <option>Default</option>
+             <option>All</option>
              <option>Price</option>
              <option>Name</option>
           </select>
