@@ -336,7 +336,7 @@ button,input {
   display: flex;
     justify-content: center;
     margin: 15px;
-    background-color: #E0E0E0;
+    background-color:#f3f3f38c;
     padding: 15px;
 }
 .OrderContainer {

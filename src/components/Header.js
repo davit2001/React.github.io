@@ -46,7 +46,7 @@ const toggleChange = () => {
  const [laptopData,setLaptopData] = useState(data.Laptop);
  const item = useSelector(state=>state.phone.menuListItem)
  const dispatch = useDispatch();
- const itemCount = useSelector(state=>state.phone.newPhoneItem.length)
+ const Count = useSelector(state=>state.phone.orderCount)
  
  const [togglesearch,setToggleSearch] = useState(false)
  const toggleSearch = () => {
@@ -59,7 +59,7 @@ const toggleChange = () => {
   document.getElementsByClassName('search')[0].classList.toggle('active')
 }
 
- 
+
     return (
         <>
          { toggle && <div className="menuList">
@@ -84,7 +84,7 @@ const toggleChange = () => {
               <button className="SearchButton" id="SearchButton" onClick={toggleSearch}></button>
             <div className="orderList" onClick={handleOrderPage}>
              <button className="order">
-               {itemCount !== 0 &&<span className="orderCount">{itemCount}</span>}
+               {Count !== 0 &&<span className="orderCount">{Count}</span>}
              </button>
            </div>
          </div>

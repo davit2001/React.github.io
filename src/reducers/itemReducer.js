@@ -22,6 +22,8 @@ const inititalState = {
     totalItem:[],
     searchItem:[],
     phoneInfo: {},
+    orderPrice:0,
+    orderCount:0,
 }
 
 const itemReducer = (state = inititalState,action) => {
@@ -48,8 +50,15 @@ const itemReducer = (state = inititalState,action) => {
         
         case "FETCH_ITEM_ORDER": 
         let newState = state
+        state.orderPrice += Number(action.payload.item.price)
+       state.orderCount += action.payload.item.count
         let index = state.newPhoneItem.findIndex(elem=>elem.price == action.payload.item.price)
-        index !== -1 ? newState.newPhoneItem[index].count++ : newState.newPhoneItem.push(action.payload.item)  
+        if(index !== -1) {
+            state.orderCount += Number(newState.newPhoneItem[index].count)
+            newState.newPhoneItem[index].count++
+         } else {
+            newState.newPhoneItem.push(action.payload.item) 
+        }  
          return {
             ...newState,
          }
@@ -60,7 +69,8 @@ const itemReducer = (state = inititalState,action) => {
              totalItem: action.payload
          }   
    case "FETCH_ITEM_REMOVE":
-       
+       state.orderPrice -= Number(action.payload.price)
+       state.orderCount -= action.payload.count
    return {
        ...state,
        newPhoneItem:state.newPhoneItem.filter((x)=>  x.price  !== action.payload.price)
@@ -97,7 +107,7 @@ const itemReducer = (state = inititalState,action) => {
         let phoneItem = [...state.itemsPhone];
          action.payload.map(item=>{
             let filterMemory = state.itemsPhone.filter((elem)=>elem.parameter.memory.indexOf(item) > -1);
-            console.log(filterMemory);
+            
             phoneMemory = phoneMemory.concat(filterMemory);
          })
             

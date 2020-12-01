@@ -130,7 +130,7 @@ export default function ItemLaptop() {
               <h4 className="Color">Color: {Color ? Color :item.parameter.color}</h4>
               <h4 className="PhoneAvailableColors"><span>Available Color: </span>{availableColors.map((item,id)=> {
                 return(
-                    <li key={id} style={{backgroundColor:`${item}`}} onClick={()=>handleSetColor(item,id)}></li>
+                    <li className={activeColor == id ? "active" : ""} key={id} style={{backgroundColor:`${item}`}} onClick={()=>handleSetColor(item,id)}></li>
                   )
                 })}</h4>
               </div>

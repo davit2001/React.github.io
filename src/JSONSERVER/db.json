@@ -123,17 +123,14 @@
       "id": "5",
       "type":"phone",
       "name": "Apple",
-      "model": "Iphone 12",
+      "model": "Iphone 12 pro",
       "img": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-r1.jpg",
 
       "Colors": {
       "Silver": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-r1.jpg",
-      "Graphite": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-max-1.jpg",
-      "purple": "https://www.mobileworld.sk/fotky7817/fotos/_vyr_1811_1389585.jpg",
-      "green":"https://images-na.ssl-images-amazon.com/images/I/71Dh%2BNR7ivL._AC_SL1500_.jpg",
-      "black":"https://images-na.ssl-images-amazon.com/images/I/71iO2R%2BCLjL._AC_SL1500_.jpg",
-      "red":"https://images-na.ssl-images-amazon.com/images/I/715HCLsOHbL._AC_SX522_.jpg"
-      },
+      "blue": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-max-1.jpg",
+      "gold":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6009/6009844_sd.jpg"
+     },
       
       "parameter": {
         "ram":["6gb"],
@@ -142,10 +139,8 @@
         "color": "Silver",
         "AvailableColors": {
           "1":"Silver",
-          "2":"Graphite",
-          "3":"Gold",
-          "4":"Pacific  ",
-          "5": "Blue"
+          "2":"blue",
+          "3":"gold"
         }
       },
       "price": ["1120","1250","1400"],
@@ -304,7 +299,7 @@
         "year":"2019",
         "color": "grey",
         "AvailableColors": {
-          "1":"grey",
+          "1":"gray",
           "2":"black"
          }
       },

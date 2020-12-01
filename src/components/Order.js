@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchItemRemove } from '../action';
 
@@ -6,6 +6,8 @@ import { fetchItemRemove } from '../action';
 export default function Order() {
    let dispatch = useDispatch();
    const items = useSelector(state=>state.phone.newPhoneItem);
+   const Price = useSelector(state=>state.phone.orderPrice)
+   const Count = useSelector(state=>state.phone.orderCount)
    const RemoveItem = (item) => {
       //console.log(item);
      dispatch(fetchItemRemove(item))
@@ -16,7 +18,7 @@ export default function Order() {
    return (
         <div className="OrderContainer">
            <div className="OrderCenterContainer">
-           <h1>Your Items {items.length}</h1>
+           <h1>Your Items {Count}</h1>
            <h1>{items.length === 0 && "No Items Found"}</h1>
            {
              items.map((item,id)=> {
@@ -53,7 +55,7 @@ export default function Order() {
                )
              })
            }
-               
+            {items.length !== 0 && <h2>Total: ${Price}</h2> } 
            </div> 
         </div>
     )
